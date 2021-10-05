@@ -1,0 +1,1998 @@
+: if this comes then just press/enter "q"
+ctrl L for clearing the screen / for reaching the end
+shift ctrl home for selecting all
+
+https://www.youtube.com/watch?v=apGV9Kg7ics&t=2728s
+
+If a branch has a pull request associated with it, it'll not allow you to create a new one
+All the commits will be added to that PR only
+
+1PR = 1 Branch
+1 Branch can only open 1 PR
+
+open different PR's for different features/bugs in the project
+
+
+
+Commands Executed while Practicing ----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+
+PS C:\Users\HP\Desktop> ls
+
+
+    Directory: C:\Users\HP\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        30-07-2021     22:16                Shortcuts
+d-----        13-07-2021     16:49                TXT Files
+-a----        30-07-2021     18:24            813 Amrat's Content - Shortcut.lnk
+-a----        22-07-2021     03:00            853 Classroom Downloads - Shortcut.lnk
+-a----        20-03-2020     07:52            824 Kishan's Content - Shortcut.lnk
+
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+
+PS C:\Users\HP\Desktop> mkdir project
+
+
+    Directory: C:\Users\HP\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-08-2021     00:10                project
+
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+
+PS C:\Users\HP\Desktop> ls
+
+    Directory: C:\Users\HP\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-08-2021     00:10                project
+d-----        30-07-2021     22:16                Shortcuts
+d-----        13-07-2021     16:49                TXT Files
+-a----        30-07-2021     18:24            813 Amrat's Content - Shortcut.lnk
+-a----        22-07-2021     03:00            853 Classroom Downloads - Shortcut.lnk
+-a----        20-03-2020     07:52            824 Kishan's Content - Shortcut.lnk
+
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+
+PS C:\Users\HP\Desktop> cd project
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git init
+Initialized empty Git repository in C:/Users/HP/Desktop/project/.git/
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> ls .git
+
+
+    Directory: C:\Users\HP\Desktop\project\.git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-08-2021     00:10                hooks
+d-----        02-08-2021     00:10                info
+d-----        02-08-2021     00:10                objects
+d-----        02-08-2021     00:10                refs
+-a----        02-08-2021     00:10            130 config
+-a----        02-08-2021     00:10             73 description
+-a----        02-08-2021     00:10             23 HEAD
+
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+
+PS C:\Users\HP\Desktop\project> notepad textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> touch file1.txt
+touch : The term 'touch' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ touch file1.txt
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (touch:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> notepad file1.c
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> ls
+
+
+    Directory: C:\Users\HP\Desktop\project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        02-08-2021     00:23              0 file1.c
+-a----        02-08-2021     00:15              0 textfile.txt
+
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.c
+        textfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add file1.c
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git commit -m "file1.c added"
+[master (root-commit) 5abe5b5] file1.c added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.c ----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        textfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git commit -m "textfile.txt added"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        textfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git commit -m "textfile.txt added"
+[master 433545b] textfile.txt added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 textfile.txt ----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+nothing to commit, working tree clean
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> vi .\textfile.txt
+vi : The term 'vi' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ vi .\textfile.txt
++ ~~
+    + CategoryInfo          : ObjectNotFound: (vi:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> vi textfile.txt
+vi : The term 'vi' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ vi textfile.txt
++ ~~
+    + CategoryInfo          : ObjectNotFound: (vi:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> notepad .\textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> notepad .\textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> type .\textfile.txt
+kishan bagga
+software engineer
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   textfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .\textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git restore --staged .\textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   textfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git restore --staged .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git restore --staged .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   textfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git commit -m "modified textfile.txt"
+[master f17c2d8] modified textfile.txt
+ 1 file changed, 2 insertions(+) ----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git log
+commit f17c2d86ee3544bb90442e672b1644bc68b61bea (HEAD -> master)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:27:29 2021 +0530
+
+    modified textfile.txt
+
+commit 433545bb2a439f43b6249b3b49a44efe4fc55abb
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:16:49 2021 +0530
+
+    textfile.txt added
+
+commit 5abe5b52908b8dc3d1819a3b14aa410c29bf4e69
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:15:04 2021 +0530
+
+    file1.c added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> rm -rf .\textfile.txt
+Remove-Item : A parameter cannot be found that matches parameter name 'rf'.
+At line:1 char:4
++ rm -rf .\textfile.txt
++    ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> del .\textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    textfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git commit -m "textfile.txt deleted successfully"
+[master 52b4409] textfile.txt deleted successfully
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 textfile.txt ----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git log
+commit 52b440972d17906b21420c2e8d90b746cfa6c185 (HEAD -> master)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:32:15 2021 +0530
+
+    textfile.txt deleted successfully
+
+commit f17c2d86ee3544bb90442e672b1644bc68b61bea
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:27:29 2021 +0530
+
+    modified textfile.txt
+
+commit 433545bb2a439f43b6249b3b49a44efe4fc55abb
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:16:49 2021 +0530
+
+    textfile.txt added
+
+commit 5abe5b52908b8dc3d1819a3b14aa410c29bf4e69
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:15:04 2021 +0530
+
+    file1.c added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+nothing to commit, working tree clean
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git reset 433545bb2a439f43b6249b3b49a44efe4fc55abb
+Unstaged changes after reset:
+D       textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git log
+commit 433545bb2a439f43b6249b3b49a44efe4fc55abb (HEAD -> master)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:16:49 2021 +0530
+
+    textfile.txt added
+
+commit 5abe5b52908b8dc3d1819a3b14aa410c29bf4e69
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:15:04 2021 +0530
+
+    file1.c added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    textfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git log
+commit 433545bb2a439f43b6249b3b49a44efe4fc55abb (HEAD -> master)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:16:49 2021 +0530
+
+    textfile.txt added
+
+commit 5abe5b52908b8dc3d1819a3b14aa410c29bf4e69
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:15:04 2021 +0530
+
+    file1.c added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    textfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> notepad anothertxtfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    textfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        anothertxtfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    textfile.txt -> anothertxtfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> notepad .\anothertxtfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> notepad houses.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   anothertxtfile.txt
+        renamed:    textfile.txt -> houses.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git stash
+Saved working directory and index state WIP on master: 433545b textfile.txt added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+nothing to commit, working tree clean
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git log
+commit 433545bb2a439f43b6249b3b49a44efe4fc55abb (HEAD -> master)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:16:49 2021 +0530
+
+    textfile.txt added
+
+commit 5abe5b52908b8dc3d1819a3b14aa410c29bf4e69
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:15:04 2021 +0530
+
+    file1.c added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> type .\textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git stash pop
+Removing textfile.txt
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   anothertxtfile.txt
+        new file:   houses.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    textfile.txt
+
+Dropped refs/stash@{0} (7f65a467553cab9ffc296357519744740cca97e5)
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   anothertxtfile.txt
+        renamed:    textfile.txt -> houses.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git stash
+Saved working directory and index state WIP on master: 433545b textfile.txt added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> type .\textfile.txt
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git stash clear
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git status
+On branch master
+nothing to commit, working tree clean
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git log
+commit 433545bb2a439f43b6249b3b49a44efe4fc55abb (HEAD -> master)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:16:49 2021 +0530
+
+    textfile.txt added
+
+commit 5abe5b52908b8dc3d1819a3b14aa410c29bf4e69
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 01:15:04 2021 +0530
+
+    file1.c added
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add origin https://github.com/kishanbagga/LearningGit.git
+fatal: pathspec 'origin' did not match any files
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git add origin https://github.com/kishanbagga/LearningGit
+fatal: pathspec 'origin' did not match any files
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git remote add origin https://github.com/kishanbagga/LearningGit.git
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git -v
+unknown option: -v
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git remote -v
+origin  https://github.com/kishanbagga/LearningGit.git (fetch)
+origin  https://github.com/kishanbagga/LearningGit.git (push)
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git push origin master
+fatal: unable to access 'https://github.com/kishanbagga/LearningGit.git/': Could not resolve host: github.com
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git remote add origin https://github.com/kishanbagga/LearningGit
+fatal: remote origin already exists.
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 442 bytes | 110.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kishanbagga/LearningGit.git
+ * [new branch]      master -> master
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> git remote -v
+origin  https://github.com/kishanbagga/LearningGit.git (fetch)
+origin  https://github.com/kishanbagga/LearningGit.git (push)
+
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+
+***** Clone GitHub Repo *****
+
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+
+PS C:\Users\HP\Desktop\project> git clone https://github.com/kishanbagga/commclassroomOP.git
+Cloning into 'commclassroomOP'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 36 (delta 4), reused 0 (delta 0), pack-reused 28
+Unpacking objects: 100% (36/36), 9.34 KiB | 5.00 KiB/s, done.
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project> cd commclassroomOP
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> type .\README.md
+# Community Classroom is OP
+
+- Kunal Kushwaha says that this community is amazing.
+- More power to kunal. love the work which your are doing for the community.
+- Anirudh Sharma finds the Community Classroom initiative really great!
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git remote add upstream https://github.com/commclassroom/commclassroomOP.git
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git remote -v
+origin  https://github.com/kishanbagga/commclassroomOP.git (fetch)
+origin  https://github.com/kishanbagga/commclassroomOP.git (push)
+upstream        https://github.com/commclassroom/commclassroomOP.git (fetch)
+upstream        https://github.com/commclassroom/commclassroomOP.git (push)
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> notepad .\README.md
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git branch kishan
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git checkout kishan
+Switched to branch 'kishan'
+M       README.md
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git add .
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git commit -m "kishan added a message"
+[kishan c2f13de] kishan added a message
+ 1 file changed, 1 insertion(+) ----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit c2f13de75064c9121ded59ac3f9a78115e8b9090 (HEAD -> kishan)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 05:38:24 2021 +0530
+
+    kishan added a message
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+:...skipping...
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>>
+commit c2f13de75064c9121ded59ac3f9a78115e8b9090 (HEAD -> kishan)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 05:38:24 2021 +0530
+
+    kishan added a message
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:08:12 2021 +0530
+
+    Update README.md
+
+commit 1bb5c8484b472a4c9b7fcd965faee2c5b3ea5a3e
+Merge: 97d9769 8da5685
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:05:39 2021 +0530
+
+    Merge pull request #3 from kunal-kushwaha/temp
+
+    kunal changed line 4
+
+commit 8da568584cee152751162a246296b419e11513e9
+Merge: 56039e8 97d9769
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:05:08 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 97d9769a65b87510116cdc64c897a9e3044c71de
+Merge: 5905d9a a53d10d
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:04:25 2021 +0530
+
+    Merge pull request #2 from commclassroom/rahul-1
+
+    rahul made changes in line 4
+
+commit 56039e8ffd189814b005a7cfa2e74c2aa8139055
+Merge: 789c476 5905d9a
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+...skipping...
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:03:59 2021 +0530
+
+    Merge branch 'main' into temp
+
+commit 789c476938d54cd61225df4da538907e3ca58aa8
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:02:52 2021 +0530
+
+    kunal changed line 4
+
+commit a53d10d48f4e5af7c5d2089b02c22320e6204ee2 (origin/rahul-1)
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:01:58 2021 +0530
+
+    rahul made changes in line 4
+
+commit 5905d9a1b4a60efbdb39b1761787e7575694acda
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:53:44 2021 +0530
+
+    Update README.md
+
+commit 4f3b54bf569c9c7ed40c8c90e1c72d5e8ac46152
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:51:23 2021 +0530
+
+    Update README.md
+
+commit 8c87fa8e21004a64f325323be03f5208b323eb22
+Merge: 09306a1 a4e3d35
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:47:41 2021 +0530
+
+    Merge pull request #1 from kunal-kushwaha/kunal
+
+    Kunal added a message
+
+commit a4e3d35ee383fec2f2e6464d87bafc0423b4c9a0
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:37:04 2021 +0530
+
+    Kunal added a message
+
+commit 09306a141eb1756aaad4e3f32c362904aadd5235
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 12:31:24 2021 +0530
+
+    Create README.md
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit c2f13de75064c9121ded59ac3f9a78115e8b9090 (HEAD -> kishan)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 05:38:24 2021 +0530
+
+    kishan added a message
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:08:12 2021 +0530
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git push origin kishan
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 350 bytes | 116.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'kishan' on GitHub by visiting:
+remote:      https://github.com/kishanbagga/commclassroomOP/pull/new/kishan
+remote:
+To https://github.com/kishanbagga/commclassroomOP.git
+ * [new branch]      kishan -> kishan
+PS C:\Users\HP\Desktop\project\commclassroomOP> notepad names.txt
+PS C:\Users\HP\Desktop\project\commclassroomOP> git add .
+PS C:\Users\HP\Desktop\project\commclassroomOP> git commit -m "names.txt added"
+[kishan 281f5e1] names.txt added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 names.txt
+PS C:\Users\HP\Desktop\project\commclassroomOP> git push origin kishan
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 31.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kishanbagga/commclassroomOP.git
+   c2f13de..281f5e1  kishan -> kishan
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit 281f5e1ea77da88b55066d2c3e3c4e5d55f3438b (HEAD -> kishan, origin/kishan)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 06:16:17 2021 +0530
+
+    names.txt added
+
+commit c2f13de75064c9121ded59ac3f9a78115e8b9090
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 05:38:24 2021 +0530
+
+    kishan added a message
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+PS C:\Users\HP\Desktop\project\commclassroomOP> git reset c2f13de75064c9121ded59ac3f9a78115e8b9090
+PS C:\Users\HP\Desktop\project\commclassroomOP> git status
+On branch kishan
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP\Desktop\project\commclassroomOP> git add .
+PS C:\Users\HP\Desktop\project\commclassroomOP> git stash
+Saved working directory and index state WIP on kishan: c2f13de kishan added a message
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit c2f13de75064c9121ded59ac3f9a78115e8b9090 (HEAD -> kishan)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 05:38:24 2021 +0530
+
+    kishan added a message
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+PS C:\Users\HP\Desktop\project\commclassroomOP> git push origin kishan -f
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kishanbagga/commclassroomOP.git
+ + 281f5e1...c2f13de kishan -> kishan (forced update)
+PS C:\Users\HP\Desktop\project\commclassroomOP> git status
+On branch kishan
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\project\commclassroomOP> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\HP\Desktop\project\commclassroomOP> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (HEAD -> main, origin/main, origin/HEAD)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:08:12 2021 +0530
+
+    Update README.md
+
+PS C:\Users\HP\Desktop\project\commclassroomOP> git fetch --all --prune
+Fetching origin
+Fetching upstream
+From https://github.com/commclassroom/commclassroomOP
+ * [new branch]      main       -> upstream/main
+ * [new branch]      rahul      -> upstream/rahul
+ * [new branch]      rahul-1    -> upstream/rahul-1
+PS C:\Users\HP\Desktop\project\commclassroomOP> git reset --hard upstream/main
+HEAD is now at 49f6657 Merge pull request #26 from R11manish/greeting
+PS C:\Users\HP\Desktop\project\commclassroomOP> gitlog
+gitlog : The term 'gitlog' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path was
+included, verify that the path is correct and try again.
+At line:1 char:1
++ gitlog
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (gitlog:String) [], CommandNotFoundE
+   xception
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (HEAD -> main, upstream/main, origin/main, origin/HEAD)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:08:12 2021 +0530
+
+    Update README.md
+
+PS C:\Users\HP\Desktop\project\commclassroomOP> git push origin main
+Everything up-to-date
+PS C:\Users\HP\Desktop\project\commclassroomOP> git pull upstream main
+From https://github.com/commclassroom/commclassroomOP
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (HEAD -> main, upstream/main, origin/main, origin/HEAD)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:08:12 2021 +0530
+
+    Update README.md
+
+PS C:\Users\HP\Desktop\project\commclassroomOP> git push origin main
+Everything up-to-date
+PS C:\Users\HP\Desktop\project\commclassroomOP> git branch temp
+PS C:\Users\HP\Desktop\project\commclassroomOP> git checkout temp
+Switched to branch 'temp'
+PS C:\Users\HP\Desktop\project\commclassroomOP> notepad.exe 1
+PS C:\Users\HP\Desktop\project\commclassroomOP> git add .; git commit -m "1"
+[temp 0c2a83f] 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+PS C:\Users\HP\Desktop\project\commclassroomOP> notepad.exe 2
+PS C:\Users\HP\Desktop\project\commclassroomOP> git add .; git commit -m "2"
+[temp 273c75e] 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.txt
+PS C:\Users\HP\Desktop\project\commclassroomOP> notepad.exe 3
+PS C:\Users\HP\Desktop\project\commclassroomOP> git add .; git commit -m "3"
+[temp 983c397] 3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.txt
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit 983c397555be9156d388d222617bbafe35457cdf (HEAD -> temp)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:29:07 2021 +0530
+
+    3
+
+commit 273c75e0d023c2f2a20c1ea4346fbee8d4ff9431
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:28:56 2021 +0530
+
+    2
+
+commit 0c2a83f26edfd6e2c9e21bef28d83dc0a684bcb8
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:28:38 2021 +0530
+
+    1
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (upstream/main, origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+PS C:\Users\HP\Desktop\project\commclassroomOP> notepad.exe 4
+PS C:\Users\HP\Desktop\project\commclassroomOP> git add .; git commit -m "4"
+[temp faf2265] 4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4.txt
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit faf226568afd350196b28bc78829c3cc448c1f7f (HEAD -> temp)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:31:29 2021 +0530
+
+    4
+
+commit 983c397555be9156d388d222617bbafe35457cdf
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:29:07 2021 +0530
+
+    3
+
+commit 273c75e0d023c2f2a20c1ea4346fbee8d4ff9431
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:28:56 2021 +0530
+
+    2
+
+commit 0c2a83f26edfd6e2c9e21bef28d83dc0a684bcb8
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:28:38 2021 +0530
+
+    1
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (upstream/main, origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+PS C:\Users\HP\Desktop\project\commclassroomOP> git rebase -i  49f66576100aa1e9cfb436548c73adc3609d47bf
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/HP/Desktop/project/commclassroomOP/.git/rebase-merge/git-rebase-todo to DOS format...
+dos2unix: converting file C:/Users/HP/Desktop/project/commclassroomOP/.git/rebase-merge/git-rebase-todo to Unix format...
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/HP/Desktop/project/commclassroomOP/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/Users/HP/Desktop/project/commclassroomOP/.git/COMMIT_EDITMSG to Unix format...
+[detached HEAD 4f03c06] commits merged
+ Date: Mon Aug 2 13:28:38 2021 +0530
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+ create mode 100644 3.txt
+ create mode 100644 4.txt
+Successfully rebased and updated refs/heads/temp.
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit 4f03c0604d721e03244977bf251a4e7ab58e6188 (HEAD -> temp)
+Author: Kishan Bagga <kishansinghbagga@gmail.com>
+Date:   Mon Aug 2 13:28:38 2021 +0530
+
+    commits merged
+
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (upstream/main, origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git reset --hard 49f66576100aa1e9cfb436548c73adc3609d47bf
+HEAD is now at 49f6657 Merge pull request #26 from R11manish/greeting
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP> git log
+commit 49f66576100aa1e9cfb436548c73adc3609d47bf (HEAD -> temp, upstream/main, origin/main, origin/HEAD, main)
+Merge: 0d9e167 9f573b6
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:26 2021 +0530
+
+    Merge pull request #26 from R11manish/greeting
+
+    greetings
+
+commit 9f573b6cb721ca734b183a29bd577722804901ef
+Merge: e134a1e 0d9e167
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:35:20 2021 +0530
+
+    Merge branch 'main' into greeting
+
+commit 0d9e16703d23abada8605d45091d0d90adbfc299
+Merge: 642eabd 8b41812
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 18:34:59 2021 +0530
+
+    Merge pull request #27 from AnirudhBot/Anirudh_Sharma
+
+    Anirudh modified readme
+
+commit e134a1e374a669bfcd138cf139eae576240f89a4
+Author: Manish Rawat <github.jmtss@gmail.com>
+Date:   Sun Aug 1 18:31:24 2021 +0530
+
+    greetings
+
+commit 8b41812b3dbd43755ca986b0e37dfe0314e2134e
+Author: Anirudh Sharma <anirudh1304@gmail.com>
+Date:   Sun Aug 1 18:15:04 2021 +0530
+
+    Anirudh modified readme
+
+    Anirudh modified readme
+
+commit 642eabdf4ffc3533bbbaaedd85a44be11700f924
+Author: Kunal Kushwaha <kunalkushwaha453@gmail.com>
+Date:   Sun Aug 1 13:08:12 2021 +0530
+
+    Update README.md
+----------------------------------------------------------------------------------------------------->>>>>>>>>>>
+PS C:\Users\HP\Desktop\project\commclassroomOP>
