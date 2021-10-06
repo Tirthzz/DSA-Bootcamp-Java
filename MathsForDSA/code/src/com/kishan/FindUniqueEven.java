@@ -1,6 +1,6 @@
 package com.kishan;
 
-public class FindUnique {
+public class FindUniqueEven {
     public static void main(String[] args) {
         int[] arr = {2, 5, 9, 3, 9, 2, 3};
         System.out.println(uniqueEle(arr));
