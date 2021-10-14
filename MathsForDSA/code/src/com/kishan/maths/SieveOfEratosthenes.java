@@ -5,7 +5,7 @@ public class SieveOfEratosthenes {
         int n = 37;
         boolean[] primes = new boolean[n + 1];
         sieve(n, primes);
-    }
+    } 
 
 //    false in array means number is prime
     public static void sieve(int n, boolean[] primes) {
