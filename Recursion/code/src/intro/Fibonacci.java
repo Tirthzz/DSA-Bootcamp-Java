@@ -1,4 +1,4 @@
-package com.kishan;
+package intro;
 
 public class Fibonacci {
 
