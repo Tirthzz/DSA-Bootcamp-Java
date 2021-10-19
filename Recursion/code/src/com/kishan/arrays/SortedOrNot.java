@@ -1,4 +1,4 @@
-package arrays;
+package com.kishan.arrays;
 
 public class SortedOrNot {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package easy;
+package com.kishan.easy;
 
 public class Palindrome {
     private static int sum;

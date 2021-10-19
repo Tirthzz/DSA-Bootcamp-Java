@@ -1,4 +1,4 @@
-package easy;
+package com.kishan.easy;
 
 public class SumOfDigits {
     public static void main(String[] args) {

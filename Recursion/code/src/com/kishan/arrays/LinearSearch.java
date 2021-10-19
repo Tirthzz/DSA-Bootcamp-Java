@@ -1,4 +1,4 @@
-package arrays;
+package com.kishan.arrays;
 
 import java.util.ArrayList;
 
