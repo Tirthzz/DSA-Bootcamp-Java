@@ -1,7 +1,5 @@
 package com.kishan;
 
-import java.util.Locale;
-
 public class Palin {
     public static void main(String[] args) {
         String str = "abccba";
